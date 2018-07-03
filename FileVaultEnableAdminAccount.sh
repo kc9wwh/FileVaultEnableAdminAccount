@@ -11,8 +11,8 @@
 #                   https://www.jamf.com/jamf-nation/articles/146
 #       Tested On:  macOS 10.13, 10.12, 10.11
 #         Created:  2018-03-21
-#   Last Modified:  2018-03-21
-#         Version:  1.7
+#   Last Modified:  2018-07-03
+#         Version:  1.7.2
 #
 ###
 
@@ -33,9 +33,6 @@ Please click the Next button below, then enter your Mac's password when prompted
 
 # The body of the message that will be displayed after 5 incorrect passwords.
 FORGOT_PW_MESSAGE="Please contact the help desk for help with your Mac password."
-
-# The body of the message that will be displayed after successful completion.
-SUCCESS_MESSAGE="Thank you! Your Encryption settings have been updated."
 
 # The body of the message that will be displayed if a failure occurs.
 FAIL_MESSAGE="Sorry, an error occurred while updating your Encryption settings. Please contact the help desk for assistance."
