@@ -188,7 +188,7 @@ USER_ID=$(/usr/bin/id -u "$CURRENT_USER")
 if [[ "$OS_MAJOR" -eq 10 && "$OS_MINOR" -le 9 ]]; then
     L_ID=$(/usr/bin/pgrep -x -u "$USER_ID" loginwindow)
     L_METHOD="bsexec"
-elif [[ "$OS_MAJOR" -eq 10 && "$OS_MINOR" -gt 9 ]]; then
+elif [[ ("$OS_MAJOR" -eq 10 && "$OS_MINOR" -gt 9) || "$OS_MAJOR" -eq 11 ]]; then
     L_ID=$USER_ID
     L_METHOD="asuser"
 fi
