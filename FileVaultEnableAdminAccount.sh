@@ -142,7 +142,7 @@ OS_MAJOR=$(/usr/bin/sw_vers -productVersion | awk -F . '{print $1}')
 OS_MINOR=$(/usr/bin/sw_vers -productVersion | awk -F . '{print $2}')
 if [[ ("$OS_MAJOR" -ne 10 || "$OS_MINOR" -lt 9) && $OS_MAJOR -ne 11 ]]; then
     REASON="This script requires macOS 10.9 or higher. This Mac has $(sw_vers -productVersion)."
-    echo $REASON
+    BAILOUT=true
 fi
 
 # Check to see if the encryption process is complete
